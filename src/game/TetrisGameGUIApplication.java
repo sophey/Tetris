@@ -1,4 +1,5 @@
 package game;
+
 import javax.swing.JFrame;
 
 /**
@@ -8,26 +9,26 @@ import javax.swing.JFrame;
  */
 public class TetrisGameGUIApplication {
 
-	/**
-	 * Start the game!
-	 * 
-	 * @param args
-	 */
-	public static void main(String[] args) {
+    /**
+     * Start the game!
+     * 
+     * @param args
+     */
+    public static void main(String[] args) {
 
-		// create a new JFrame to hold a new controller instance
-		JFrame tetrisFrame = new JFrame("Tetris");
+	// create a new JFrame to hold a new controller instance
+	JFrame tetrisFrame = new JFrame("Tetris");
 
-		// set size
-		tetrisFrame.setSize(400, 800);
+	// set size
+	tetrisFrame.setSize(400, 800);
 
-		// make a new controller instance and add it
-		tetrisFrame.add(new PieceController());
+	// make a new controller instance and add it
+	tetrisFrame.add(new PieceController());
 
-		// exit normally on closing the window
-		tetrisFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	// exit normally on closing the window
+	tetrisFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		// show frame
-		tetrisFrame.setVisible(true);
-	}
+	// show frame
+	tetrisFrame.setVisible(true);
+    }
 }
